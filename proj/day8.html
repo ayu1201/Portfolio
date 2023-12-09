@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<style>
+			#outerball
+			{				
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				background-color: white;
+				border-style: double;
+				border-color: black;				
+				background-image:radial-gradient(closest-side at 50% 50%, white, white, black);
+			}
+
+			#a1
+			{
+				border-radius: 20%;
+				border: 2px solid black;
+			}
+		</style>
+	</head>
+	<body bgcolor="lightgreen">
+		<center>
+			<marquee id="a1" direction="down" bgcolor="green" height="80%" width="80%" scrollamount="60" vspace="70" behavior="alternate">
+				<marquee behavior="alternate" direction="right">
+				<div id="outerball"></div>
+				</marquee>
+			</marquee>
+		</center>
+	</body>
+</html>

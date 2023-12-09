@@ -1,0 +1,216 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  crossorigin="anonymous" />
+		<style>
+			#form
+			{
+				height: 400px;
+				width: 400px;
+				margin-left: 30%;
+				margin-top: 5%;
+			}
+
+			#form input[type="text"]
+			{
+				width: 600px;
+				border-bottom: solid;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+			}
+
+			#form input[type="textarea"]
+			{
+				width: 600px;
+				height: 100px;
+				border-bottom: solid;
+				border-top: none;
+				border-left: none;
+				border-right: none;
+			}
+
+			#form input[type="text"]:focus
+			{
+				border-bottom-color: hotpink;
+				border-left: none;
+				outline: none;
+			}
+
+			#form input[type="textarea"]:focus
+			{
+				border-bottom-color: hotpink;
+				outline: none;
+			}
+
+			#submit
+			{
+				margin-left: 35%;
+				margin-top: 30px;
+				border: none;
+				height: 40px;
+				width: 200px;
+				background-image: linear-gradient(to right, hotpink , #bd1c1c);
+			}
+
+			#form
+			{
+				height: 600px;
+				width: 700px;
+				position: absolute;
+				background-color: white;
+				margin-left: 200px;
+				border-radius: 5%;
+			}
+
+			#elements
+			{
+				margin-left: 40px;
+				margin-top: 20px;
+				position: absolute;
+			}
+
+			#elements h1
+			{
+				font-family:Arial Black;
+				opacity: 0.7;
+			}
+
+			#main
+			{
+				
+				margin-left: 200px;
+				margin-right: 100px;
+				margin-top: 10px;
+				background-image: url('try.jpg');
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 700px;
+				width: 1100px;
+				box-shadow: 20px 20px 20px black;
+				position: absolute;
+			}
+
+			#main:hover
+			{
+				background-color: hotpink;
+			}
+
+			#headder
+			{
+				background-color: #c8c5c9;
+				width: 100%;
+				height: 4%;
+				box-shadow: 1px 1px 20px grey;	
+				opacity: 0.9;
+			}
+
+			#search1
+			{
+				margin-left:40%;
+				width: 700px;
+				margin-top: 4px;
+				position: absolute;
+			}
+
+			#try
+			{
+				width: 200px;
+			}
+
+			#try:focus
+			{
+				transition: 1s;
+				width: 40%;
+				background: #ffbdbd;
+				border: none;
+				outline: none;
+			}
+
+			#plus
+			{
+				margin-left: 98%;
+				margin-top: 6px;
+				position: absolute;
+			}
+
+			#icons
+			{
+				display: flex;
+				margin-top: 8px;
+				margin-left: 4px;
+				position: absolute;
+			}
+
+			#icon1
+			{
+				height: 10px;
+				width: 10px;
+				background-image:radial-gradient(closest-side at 50% 50%, white,red, red);
+				border-radius: 50%;
+				margin-left: 2px;
+			}
+
+			#icon2
+			{
+				height: 10px;
+				width: 10px;
+				background-image:radial-gradient(closest-side at 50% 50%, white,yellow, yellow);
+				border-radius: 50%;
+				margin-left: 5px;
+			}
+
+			#icon3
+			{
+				height: 10px;
+				width: 10px;
+				background-image:radial-gradient(closest-side at 50% 50%, white,green,green);
+				border-radius: 50%;
+				margin-left: 5px;
+			}
+
+			#main img
+			{
+				background-repeat: no-repeat;
+				background-size: cover;
+				opacity: 0.7;
+				position: absolute;
+				margin-top: 28px;
+				height: 672px;
+				width: 1100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="head">
+			<div id="main"><img src="pink.jpg">
+				<div id="headder">
+					<div id="icons">
+						<div id="icon1"></div>
+						<div id="icon2"></div>
+						<div id="icon3"></div>						
+					</div>
+					<div id="search1">
+						<i class="fas fa-search" id="search"></i>
+						<input type="search" placeholder="Search or enter website name" id="try" />						
+					</div>
+					<div id="plus">
+						<a href="" target="blank"><button>+</button></a>						
+					</div>
+				</div>
+					<div id="form">
+					<form id="elements">
+						<h1 align="center" id="font">
+							Contact Us
+						</h1><br><br>
+
+						<label>NAME<label>	</br><input type="text"><br><br><br><br>
+						<label>EMAIL</label>	</br><input type="text"><br><br><br><br>
+						<label>MESSAGE</label>	</br><input type="textarea">
+						<br><br>
+						<button id="submit">Send Your Message</button>
+					</form>
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>
